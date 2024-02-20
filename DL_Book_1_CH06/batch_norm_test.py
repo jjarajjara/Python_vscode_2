@@ -1,5 +1,7 @@
+
 import sys, os
 sys.path.append(os.pardir)  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
+sys.path.append('~/programming/dataset/mnist.py')
 import numpy as np
 import matplotlib.pyplot as plt
 from dataset.mnist import load_mnist
