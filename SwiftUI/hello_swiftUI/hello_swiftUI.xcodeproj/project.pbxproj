@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B51C87D62B9575DE00B0A4BD /* _____App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C87D52B9575DE00B0A4BD /* _____App.swift */; };
-		B51C87D82B9575DE00B0A4BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C87D72B9575DE00B0A4BD /* ContentView.swift */; };
-		B51C87DA2B9575E100B0A4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51C87D92B9575E100B0A4BD /* Assets.xcassets */; };
-		B51C87DD2B9575E100B0A4BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51C87DC2B9575E100B0A4BD /* Preview Assets.xcassets */; };
+		B51C87F02BA6D64000B0A4BD /* hello_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C87EF2BA6D64000B0A4BD /* hello_swiftUIApp.swift */; };
+		B51C87F22BA6D64000B0A4BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C87F12BA6D64000B0A4BD /* ContentView.swift */; };
+		B51C87F42BA6D64300B0A4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51C87F32BA6D64300B0A4BD /* Assets.xcassets */; };
+		B51C87F72BA6D64300B0A4BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51C87F62BA6D64300B0A4BD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B51C87D22B9575DE00B0A4BD /* 종프.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "종프.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51C87D52B9575DE00B0A4BD /* _____App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_____App.swift"; sourceTree = "<group>"; };
-		B51C87D72B9575DE00B0A4BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B51C87D92B9575E100B0A4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B51C87DC2B9575E100B0A4BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B51C87EC2BA6D64000B0A4BD /* hello_swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello_swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51C87EF2BA6D64000B0A4BD /* hello_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_swiftUIApp.swift; sourceTree = "<group>"; };
+		B51C87F12BA6D64000B0A4BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B51C87F32BA6D64300B0A4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B51C87F62BA6D64300B0A4BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B51C87CF2B9575DE00B0A4BD /* Frameworks */ = {
+		B51C87E92BA6D64000B0A4BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B51C87C92B9575DE00B0A4BD = {
+		B51C87E32BA6D64000B0A4BD = {
 			isa = PBXGroup;
 			children = (
-				B51C87D42B9575DE00B0A4BD /* 종프 */,
-				B51C87D32B9575DE00B0A4BD /* Products */,
+				B51C87EE2BA6D64000B0A4BD /* hello_swiftUI */,
+				B51C87ED2BA6D64000B0A4BD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B51C87D32B9575DE00B0A4BD /* Products */ = {
+		B51C87ED2BA6D64000B0A4BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B51C87D22B9575DE00B0A4BD /* 종프.app */,
+				B51C87EC2BA6D64000B0A4BD /* hello_swiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B51C87D42B9575DE00B0A4BD /* 종프 */ = {
+		B51C87EE2BA6D64000B0A4BD /* hello_swiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				B51C87D52B9575DE00B0A4BD /* _____App.swift */,
-				B51C87D72B9575DE00B0A4BD /* ContentView.swift */,
-				B51C87D92B9575E100B0A4BD /* Assets.xcassets */,
-				B51C87DB2B9575E100B0A4BD /* Preview Content */,
+				B51C87EF2BA6D64000B0A4BD /* hello_swiftUIApp.swift */,
+				B51C87F12BA6D64000B0A4BD /* ContentView.swift */,
+				B51C87F32BA6D64300B0A4BD /* Assets.xcassets */,
+				B51C87F52BA6D64300B0A4BD /* Preview Content */,
 			);
-			path = "종프";
+			path = hello_swiftUI;
 			sourceTree = "<group>";
 		};
-		B51C87DB2B9575E100B0A4BD /* Preview Content */ = {
+		B51C87F52BA6D64300B0A4BD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B51C87DC2B9575E100B0A4BD /* Preview Assets.xcassets */,
+				B51C87F62BA6D64300B0A4BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B51C87D12B9575DE00B0A4BD /* 종프 */ = {
+		B51C87EB2BA6D64000B0A4BD /* hello_swiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B51C87E02B9575E100B0A4BD /* Build configuration list for PBXNativeTarget "종프" */;
+			buildConfigurationList = B51C87FA2BA6D64300B0A4BD /* Build configuration list for PBXNativeTarget "hello_swiftUI" */;
 			buildPhases = (
-				B51C87CE2B9575DE00B0A4BD /* Sources */,
-				B51C87CF2B9575DE00B0A4BD /* Frameworks */,
-				B51C87D02B9575DE00B0A4BD /* Resources */,
+				B51C87E82BA6D64000B0A4BD /* Sources */,
+				B51C87E92BA6D64000B0A4BD /* Frameworks */,
+				B51C87EA2BA6D64000B0A4BD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "종프";
-			productName = "종프";
-			productReference = B51C87D22B9575DE00B0A4BD /* 종프.app */;
+			name = hello_swiftUI;
+			productName = hello_swiftUI;
+			productReference = B51C87EC2BA6D64000B0A4BD /* hello_swiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B51C87CA2B9575DE00B0A4BD /* Project object */ = {
+		B51C87E42BA6D64000B0A4BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					B51C87D12B9575DE00B0A4BD = {
+					B51C87EB2BA6D64000B0A4BD = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = B51C87CD2B9575DE00B0A4BD /* Build configuration list for PBXProject "종프" */;
+			buildConfigurationList = B51C87E72BA6D64000B0A4BD /* Build configuration list for PBXProject "hello_swiftUI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = B51C87C92B9575DE00B0A4BD;
-			productRefGroup = B51C87D32B9575DE00B0A4BD /* Products */;
+			mainGroup = B51C87E32BA6D64000B0A4BD;
+			productRefGroup = B51C87ED2BA6D64000B0A4BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B51C87D12B9575DE00B0A4BD /* 종프 */,
+				B51C87EB2BA6D64000B0A4BD /* hello_swiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B51C87D02B9575DE00B0A4BD /* Resources */ = {
+		B51C87EA2BA6D64000B0A4BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51C87DD2B9575E100B0A4BD /* Preview Assets.xcassets in Resources */,
-				B51C87DA2B9575E100B0A4BD /* Assets.xcassets in Resources */,
+				B51C87F72BA6D64300B0A4BD /* Preview Assets.xcassets in Resources */,
+				B51C87F42BA6D64300B0A4BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B51C87CE2B9575DE00B0A4BD /* Sources */ = {
+		B51C87E82BA6D64000B0A4BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51C87D82B9575DE00B0A4BD /* ContentView.swift in Sources */,
-				B51C87D62B9575DE00B0A4BD /* _____App.swift in Sources */,
+				B51C87F22BA6D64000B0A4BD /* ContentView.swift in Sources */,
+				B51C87F02BA6D64000B0A4BD /* hello_swiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B51C87DE2B9575E100B0A4BD /* Debug */ = {
+		B51C87F82BA6D64300B0A4BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		B51C87DF2B9575E100B0A4BD /* Release */ = {
+		B51C87F92BA6D64300B0A4BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,14 +264,14 @@
 			};
 			name = Release;
 		};
-		B51C87E12B9575E100B0A4BD /* Debug */ = {
+		B51C87FB2BA6D64300B0A4BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"종프/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"hello_swiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = QVFJR6Q7NB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -285,7 +285,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.jjarajjara.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jjarajjara.hello-swiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,14 +293,14 @@
 			};
 			name = Debug;
 		};
-		B51C87E22B9575E100B0A4BD /* Release */ = {
+		B51C87FC2BA6D64300B0A4BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"종프/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"hello_swiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = QVFJR6Q7NB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.jjarajjara.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jjarajjara.hello-swiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B51C87CD2B9575DE00B0A4BD /* Build configuration list for PBXProject "종프" */ = {
+		B51C87E72BA6D64000B0A4BD /* Build configuration list for PBXProject "hello_swiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B51C87DE2B9575E100B0A4BD /* Debug */,
-				B51C87DF2B9575E100B0A4BD /* Release */,
+				B51C87F82BA6D64300B0A4BD /* Debug */,
+				B51C87F92BA6D64300B0A4BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B51C87E02B9575E100B0A4BD /* Build configuration list for PBXNativeTarget "종프" */ = {
+		B51C87FA2BA6D64300B0A4BD /* Build configuration list for PBXNativeTarget "hello_swiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B51C87E12B9575E100B0A4BD /* Debug */,
-				B51C87E22B9575E100B0A4BD /* Release */,
+				B51C87FB2BA6D64300B0A4BD /* Debug */,
+				B51C87FC2BA6D64300B0A4BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B51C87CA2B9575DE00B0A4BD /* Project object */;
+	rootObject = B51C87E42BA6D64000B0A4BD /* Project object */;
 }

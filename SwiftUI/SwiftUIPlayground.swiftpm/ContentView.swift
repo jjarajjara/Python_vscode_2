@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  종프
-//
-//  Created by 김태진 on 3/4/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -12,13 +5,8 @@ struct ContentView: View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundStyle(.tint)
+                .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
