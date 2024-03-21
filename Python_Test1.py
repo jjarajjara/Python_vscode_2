@@ -1208,81 +1208,28 @@
 
 
 
-## 인프설 그래프 그리기 
+## (1,2) (3,4) Scatter를 쓰는거고 
+## 두 점을 긋는 직선을 이어보자 Plot 사용 
+## y = ax + b를 구하기 
 
-from itertools import chain
-import numpy as np 
-from numpy import ndarray
 import matplotlib.pyplot as plt
-from typing import Callable
-from typing import List
+import numpy as np 
 
-np.set_printoptions(precision=4)
+a = np.array([1,3])
+b = np.array([3,4])
 
-def square(x: ndarray) -> ndarray:
-    return np.power(x,2)
+x = np.array([1,3])
+y = np.array([3,4])
 
-def relu(x: ndarray) -> ndarray:
-    return np.maximum(x,0)
+# plt.scatter(a[0],a[1])
+# plt.scatter(b[0],b[1])
 
-def deriv(func: Callable[[np.ndarray], np.ndarray], input_: np.ndarray, delta:float = 0.0001) -> np.ndarray:
-    return (func(input_ + delta) - func(input_ - delta)) / (2 * delta)
-
-Array_Function = Callable[[np.ndarray], np.ndarray]
-Chain = List[Array_Function]
-
-
-def chain_length_2(chain: Chain, x: np.ndarray) -> np.ndarray:
-    assert len(chain) == 2
-    f1 = chain[0]
-    f2 = chain[1]
-
-    return f2(f1(x))
-
-def chain_deriv_2(chain: Chain, input_range: np.ndarray) -> np.ndarray:
-    assert len(chain) == 2
-    assert input_range.ndim == 1
-
-    f1 = chain[0]
-    f2 = chain[1]
-
-    f1_of_x = f1(input_range)
-    df1dx = deriv(f1, input_range)
-    df2du = deriv(f2, f1(input_range))
-
-    return df1dx * df2du
-
-def sigmoid(x : np.ndarray) -> np.ndarray:
-    return 1 / (1 + np.exp(-x))
-
-def plot_chain(ax, chain: Chain, input_range: np.ndarray) -> None:
-    assert input_range.ndim == 1
-    output_range = chain_length_2(chain, input_range)
-    ax.plot(input_range, output_range)
-    
-def plot_chain_deriv(ax, chain: Chain, input_range: np.ndarray) -> None:
-    assert input_range.ndim == 1
-    ax.plot(input_range, chain_deriv_2(chain, input_range))
-
-fig, ax = plt.subplots(1,2,sharey=True, figsize=(16,8))
-
-chain_1 = [square, sigmoid]
-chain_2 = [sigmoid, square]
-
-PLOT_RANGE = np.arange(-3,3,0.01)
-plot_chain(ax[0], chain_1, PLOT_RANGE)
-plot_chain_deriv(ax[0], chain_1, PLOT_RANGE)
-
-ax[0].legend(["$f(x)$", "$\\frac{df}{dx}$"])
-ax[0].set_title("Function and derivative for\n$f(x) = sigmoid(square(x))$")
-
-plot_chain(ax[1], chain_2, PLOT_RANGE)
-plot_chain_deriv(ax[1], chain_2, PLOT_RANGE)
-ax[1].legend(["$f(x)$", "$\\frac{df}{dx}$"])
-ax[1].set_title("Function and derivative for\n$f(x) = square(sigmoid(x))")
-
+plt.scatter(x,y)
+plt.plot(x,y)
 plt.show()
 
+x1 = np.linspace(0,4)
+y1 = x+1 
 
-
-
+plt.plot(x1,y1,linestyle='dashed')
+plt.show()
