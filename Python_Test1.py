@@ -1212,24 +1212,54 @@
 ## 두 점을 긋는 직선을 이어보자 Plot 사용 
 ## y = ax + b를 구하기 
 
-import matplotlib.pyplot as plt
-import numpy as np 
+# import matplotlib.pyplot as plt
+# import numpy as np 
 
-a = np.array([1,3])
-b = np.array([3,4])
+# a = np.array([1,3])
+# b = np.array([3,4])
 
-x = np.array([1,3])
-y = np.array([3,4])
+# x = np.array([1,3])
+# y = np.array([3,4])
 
-# plt.scatter(a[0],a[1])
-# plt.scatter(b[0],b[1])
+# # plt.scatter(a[0],a[1])
+# # plt.scatter(b[0],b[1])
 
-plt.scatter(x,y)
-plt.plot(x,y)
-plt.show()
+# plt.scatter(x,y)
+# plt.plot(x,y)
+# plt.show()
 
-x1 = np.linspace(0,4)
-y1 = x+1 
+# x1 = np.linspace(0,4)
+# y1 = x+1 
 
-plt.plot(x1,y1,linestyle='dashed')
-plt.show()
+# plt.plot(x1,y1,linestyle='dashed')
+# plt.show()
+
+## 데이터 수집 프로그래밍 과제 0321 
+
+
+# i = int(input("i의 값 입력: "))  # 사용자로부터 숫자 입력 받기
+# result = (i + 20) if (i + 20 >= 0 and i + 20 <= 255) else (0 if i + 20 < 0 else 255)  # 결과값 계산
+# print(result)  # 결과값 출력
+
+# result = i+20
+# if result >= 0 and result <= 255:
+#     print(result)
+# else :
+#     if i<0:
+#         print(0)
+#     elif i > 255:
+#         print(255)
+
+# while True:
+#     i = int(input("숫자를 입력하세요 (종료하려면 -1을 입력하세요): "))  # 사용자로부터 숫자 입력 받기
+#     if i == -1:
+#         print("프로그램을 종료합니다.")
+#         break  # -1이 입력되면 프로그램 종료
+#     result = (i + 20) if (i + 20 >= 0 and i + 20 <= 255) else (0 if i + 20 < 0 else 255)  # 결과값 계산
+#     print("결과값:", result)  # 결과값 출력
+
+for i in range(2, 10):  # 2단부터 9단까지 반복
+    print(f"{i}단")
+    for j in range(1, 10):  # 각 단의 곱셈
+        print(f"{i} x {j} = {i*j}")  # 구구단 출력
+    print()  # 한 단 출력 후 줄 바꿈
