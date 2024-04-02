@@ -1236,20 +1236,12 @@
 
 ## 데이터 수집 프로그래밍 과제 0321 
 
-
+# ## 63Page 문제 1번 풀이
 # i = int(input("i의 값 입력: "))  # 사용자로부터 숫자 입력 받기
 # result = (i + 20) if (i + 20 >= 0 and i + 20 <= 255) else (0 if i + 20 < 0 else 255)  # 결과값 계산
 # print(result)  # 결과값 출력
 
-# result = i+20
-# if result >= 0 and result <= 255:
-#     print(result)
-# else :
-#     if i<0:
-#         print(0)
-#     elif i > 255:
-#         print(255)
-
+# ## 63Page 문제 2번 풀이 
 # while True:
 #     i = int(input("숫자를 입력하세요 (종료하려면 -1을 입력하세요): "))  # 사용자로부터 숫자 입력 받기
 #     if i == -1:
@@ -1258,8 +1250,126 @@
 #     result = (i + 20) if (i + 20 >= 0 and i + 20 <= 255) else (0 if i + 20 < 0 else 255)  # 결과값 계산
 #     print("결과값:", result)  # 결과값 출력
 
-for i in range(2, 10):  # 2단부터 9단까지 반복
-    print(f"{i}단")
-    for j in range(1, 10):  # 각 단의 곱셈
-        print(f"{i} x {j} = {i*j}")  # 구구단 출력
-    print()  # 한 단 출력 후 줄 바꿈
+# ## 71Page 풀이
+# print("1단")
+# for j in range(1, 10):  # 1단의 곱셈
+#     print(f"1 x {j} = {1*j}")  # 구구단 출력
+
+# table =[]
+# for i in range(1,10):
+#     table.append([])
+#     for j in range(1,10):
+#         table[-1].append(1*j)
+
+# # print(table[-1])
+# # print(table)
+
+# import numpy as np
+
+# i=1
+# # print([i*j for j in range(1,10)])
+# table= [i*j for j in range(1,10) for i in range(1,10)]
+# print([i*j for j in range(1,10) for i in range(1,10)])
+
+# print(np.array(table).reshape(9,9))
+
+# ##(a)
+# def monthly_money():
+#     i = int(input("연봉을 입력하세요(만원단위): "))
+#     return i / 12
+
+# print("월급은", monthly_money() , "만원 입니다.")
+
+
+# ##(b)
+# c = None
+
+# def max_fun(*args):
+#     global c
+#     if args:
+#         max_value = max(args)
+#         if c is None or max_value > c:
+#             c = max_value
+
+
+
+
+
+
+
+
+
+# c = None  # Initialize c as None or any desired default value
+
+# def assign_max_to_c(*args):
+#     global c  # Declare c as global to modify its value
+#     if args:  # Check if there are any arguments
+#         max_value = max(args)  # Find the maximum value among the arguments
+#         if c is None or max_value > c:  # Update c if it's None or the found max is greater
+#             c = max_value
+
+
+
+# class Model:
+#     def __init__(self):
+#         print("Model is created.")
+#         self.a = None
+#         self.b = None
+
+#     def fit(self, a, b):
+#         self.a = a
+#         self.b = b
+
+#     def predict(self, X):
+#         return self.a * X + self.b
+
+# # Model 1 인스턴스 생성 및 매개변수 설정
+# model1 = Model()
+# model1.fit(2, 1)
+
+# # Model 2 인스턴스 생성 및 매개변수 설정
+# model2 = Model()
+# model2.fit(3, 2)
+
+# print("Model 1 예측값:", model1.predict(10))
+# print("Model 2 예측값:", model2.predict(10))
+
+
+# import numpy as np
+
+# def perceptron(x, w, b):
+#     return np.dot(x, w) + b
+
+# def sigmoid(x):
+#     return 1 / (1 + np.exp(-x))
+
+# # 가중치와 편향을 -1과 1 사이의 무작위 값으로 초기화
+# w = np.random.uniform(-1, 1, 4)
+# b = np.random.uniform(-1, 1)
+
+# # 입력값 x1~x4를 -10에서 10 사이의 값으로 무작위 선택
+# x = np.random.randint(-10, 10, 4)
+
+# # 퍼셉트론 함수를 통과한 결과
+# perceptron_output = perceptron(x, w, b)
+
+# # 시그모이드 함수를 통과한 결과
+# sigmoid_output = sigmoid(perceptron_output)
+
+# print("입력값:", x)
+# print("퍼셉트론 출력값:", perceptron_output)
+# print("시그모이드 출력값:", sigmoid_output)
+
+import numpy as np 
+
+a = np.array([[1,2,3],[4,5,6]])
+b = np.array([[1,2],[3,4],[5,6]])
+print(np.dot(a,b)) ## 행렬의 곱셈
+
+result = np.zeros((2,2))
+## 행렬의 곱 for문으로 짜기 
+for i in range(len(a)):
+    for j in range(len(b[0])):
+        for k in range(len(b)):
+            result[i][j] += a[i][k] * b[k][j]
+print(result)
