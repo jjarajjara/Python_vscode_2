@@ -67,3 +67,57 @@ def matrix_forward_extra(X: ndarray,
     S = sigma(N)
 
     return S
+
+def deriv(func: Callable[[ndarray], ndarray],
+          input_: ndarray,
+          diff: float = 0.001) -> ndarray:
+    '''
+    배열 input의 각 요소에 대해 함수 func의 도함숫값 계산
+    '''
+    return (func(input_ + diff) - func(input_ - diff)) / (2 * diff)
+
+def sigmoid(x: ndarray) -> ndarray:
+    '''
+    입력으로 받은 ndarray의 각 요소에 대한 sigmoid 함숫값을 계산한다.
+    '''
+    return 1 / (1 + np.exp(-x))
+
+## 행렬곱의 역방향 계산
+def matrix_function_backward_1(X: ndarray,
+                               W: ndarray,
+                               sigma: Array_Function) -> ndarray:
+    '''
+    첫 번째 요소에 대한 행렬함수의 도함수 계산
+    '''
+    assert X.shape[1] == W.shape[0]
+
+    # 행렬곱
+    N = np.dot(X, W)
+
+    # 행렬곱의 출력을 함수 sigma의 입력값으로 전달
+    S = sigma(N)
+
+    # 역방향 계산
+    dSdN = deriv(sigma, N)
+
+    # dNdX
+    dNdX = np.transpose(W, (1, 0))
+
+    # 계산한 값을 모두 곱함. 여기서는 dNdX의 모양이 1*1이므로 순서는 무관함
+    return np.dot(dSdN, dNdX)
+
+print(matrix_function_backward_1(X, W, sigmoid))
+
+def forward_test(ind1, ind2, inc):
+    
+    X1 = X.copy()
+    X1[ind1, ind2] = X[ind1, ind2] + inc
+
+    return matrix_forward_extra(X1, W, sigmoid)
+
+(np.round(forward_test(0, 2, 0.01) - forward_test(0, 2, 0), 4)) / 0.01
+print(np.round(forward_test(0, 2, 0.01) - forward_test(0, 2, 0), 4) / 0.01)
+
+np.round(matrix_function_backward_1(X, W, sigmoid)[0, 2], 2)
+print(np.round(matrix_function_backward_1(X, W, sigmoid)[0, 2], 2))
+
